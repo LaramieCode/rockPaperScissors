@@ -24,4 +24,24 @@ function getComputerChoice () {
     return random
 }
 //make a function that finds the winner of you vs random, and return the winner
+//if player chose rock, win if computer plays scissors, lose if computer plays paper, tie if computer plays rock
+function winner () {
+    let player = yourChoice()
+    let computer = getComputerChoice()
+    let winner;
+    if (player === "rock") {
+        if (computer === "rock") { winner = "tie"}
+        if (computer === "paper") { winner = "computer"}
+        if (computer === "scissors") { winner = "player" }
+    } else if (player === "paper") {
+        if (computer === "rock") { winner = "player" }
+        if (computer === "paper") { winner = "tie" }
+        if (computer === "scissors") { winner = "computer" } 
+    } else if (player === "scissors") {
+        if (computer === "rock") { winner = "computer" }
+        if (computer === "paper") { winner = "player" }
+        if (computer === "scissors") { winner = "tie" }
+    }
+    return [winner, player, computer]
+}
 //make a function that shows the winner in console.log
