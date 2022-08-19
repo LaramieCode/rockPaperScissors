@@ -45,3 +45,15 @@ function winner () {
     return [winner, player, computer]
 }
 //make a function that shows the winner in console.log
+function play() {
+    let game = winner()
+    if (game[0] === "player") {
+        console.log( `${game[1]} beats ${game[2]}, Player won!` )
+    }
+    else if (game[0] === "computer") {
+        console.log( `${game[2]} beats ${game[1]}, Computer won!` )
+    }
+    else if (game[0] === "tie") {
+        console.log( `${game[1]} ties ${game[2]}` )
+    }
+}
