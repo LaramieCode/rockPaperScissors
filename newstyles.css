@@ -9,17 +9,36 @@ body {
 
 #scoreContainer {
     background-color: rgb(32, 32, 32);
-    flex: 1 0 auto;
+    flex: 0 0 25%;
+    display: flex;
+    flex-direction: column;
+}
+.scoreContainers {
+    flex: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.scoreTitles {
+    position: relative;
+    top: 30%;
+    color: rgb(0, 125, 197);
+}
+.scoreCount {
+    position: relative;
+    top: 40%;
+    font-size: 500%;
+    color: rgb(0, 105, 167);
 }
 
 #gameContainer {
     background-color: rgb(48, 48, 48);
-    flex: 2 0 auto;
+    flex: 0 0 50%;
 }
 
 #historyContainer {
     background-color: rgb(32, 32, 32);
-    flex: 1 0 auto;
+    flex: 0 0 25%;
 }
 
 
