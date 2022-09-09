@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    display: flex;
+    height: 100vh;
+}
+
+#scoreContainer {
+    background-color: rgb(32, 32, 32);
+    flex: 1 0 auto;
+}
+
+#gameContainer {
+    background-color: rgb(48, 48, 48);
+    flex: 2 0 auto;
+}
+
+#historyContainer {
+    background-color: rgb(32, 32, 32);
+    flex: 1 0 auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .choices {
+    height: 100px;
+    width: 100px;
+}
+.choices:hover {
+    height: 120px;
+    width: 120px;
+} */
