@@ -7,6 +7,8 @@ body {
     height: 100vh;
 }
 
+
+
 #scoreContainer {
     background-color: rgb(32, 32, 32);
     flex: 0 0 25%;
@@ -28,13 +30,65 @@ body {
     position: relative;
     top: 40%;
     font-size: 500%;
-    color: rgb(0, 105, 167);
+    color: rgb(0, 93, 146);
 }
+
+
 
 #gameContainer {
     background-color: rgb(48, 48, 48);
     flex: 0 0 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
+#winnerText {
+   position: relative;
+   top: 15%; 
+   font-size: 500%;
+   color: rgb(0, 125, 197);
+}
+
+#winnerResult {
+    position: relative;
+    top: 20%;
+    font-size: 335%;
+    color: rgb(0, 93, 146);
+}
+
+#rpsChoice {
+    display: flex;
+    position: relative;
+    top: 35%;
+    width: 100%;
+}
+.rpsChoices {
+    flex: auto;
+}
+
+#rock {
+    padding: 10%;
+}
+#rock:hover {
+    padding: 5%;
+}
+
+#paper {
+    padding: 10%;
+}
+#paper:hover {
+    padding: 5%;
+}
+
+#scissors {
+    padding: 10%;
+}
+#scissors:hover {
+    padding: 5%;
+}
+
+
 
 #historyContainer {
     background-color: rgb(32, 32, 32);
