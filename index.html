@@ -4,39 +4,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="javascript.js" defer></script>
     <link rel="stylesheet" href="styles.css">
+    <script src="game.js" defer></script>
     <title>Document</title>
 </head>
 <body>
-    
-    <div id="container">
-    <div id="game">
-        <div id =gameRow1>
-            <div id="gameStatus"></div>
+
+    <div id="scoreContainer">
+        <div id="playerScoreContainer" class="scoreContainers">
+            <h1 class="scoreTitles">Player</h1>
+            <h2 class="scoreCount" id="playerScore">#</h2>
+
         </div>
-        <div id="gameRow2">
-            <button class="buttons" id="rock">Rock</button>
-            <button class="buttons" id="paper">Paper</button>
-            <button class="buttons" id="scissors">Scissors</button>
-            <button class="buttons" id="playAgain">play Again?</button>
-        </div>
-        <div id="gameRow3">
-            <div id="gameScoreColumn1">
-                <p id="playerScore">#</p>
-                <p id="player">player</p>
-            </div>
-            <div id="gameScoreColumn2">
-                <p class="score">=</p>
-            </div>
-            <div id="gameScoreColumn3">
-                <p id="computerScore">#</p>
-                <p id="computer">computer</p>
-            </div>
+        <div id="computerScoreContainer" class="scoreContainers">
+            <h1 class="scoreTitles">Computer</h1>
+            <h2 class="scoreCount" id="computerScore">#</h2>
+
         </div>
     </div>
+
+    <div id="gameContainer">
+        <div id="winnerText">Round Winner!</div>
+        <div id="winnerResult">Rock, Paper, Scissors?</div>
+        <div id="rpsChoice">
+            <div class="rpsChoices"><img class="rpsImage" id="rock" src="images/rock.svg"></div>
+            <div class="rpsChoices"><img class="rpsImage" id="paper" src="images/paper.svg"></div>
+            <div class="rpsChoices"><img class="rpsImage" id="scissors" src="images/scissors.svg"></div>
+        </div>
+        <div id="playAgain">Play again?</div>
     </div>
-    
-    
+
+    <div id="historyContainer">
+        <h1 id="historyTitle">History</h1>
+    </div>
+
 </body>
 </html>
+
+
+<!-- <img class="choices" src="images/rock.svg">
+<img class="choices" src="images/paper.svg">
+<img class="choices" src="images/scissors.svg"> -->

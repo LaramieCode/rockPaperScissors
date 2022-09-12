@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+#container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(88, 88, 88);
+}
+#game {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    background-color: rgb(63, 63, 63);
+    border: 5px solid black;
+    padding: 0 30px;
+}
+#gameRow1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 370px;
+    font-size: xx-large;
+}
+#gameRow2 {
+    gap: 25px;
+    display: flex;
+}
+#playAgain {
+    width: 350px;
+    height: 100px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+#gameRow3 {
+    height: 90px;
+    width: 350px;
+    display: flex;
+}
+#gameScoreColumn1, #gameScoreColumn2, #gameScoreColumn3 { 
+    width: 33.3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-large;
+}
+.buttons {
+    height: 100px;
+    width: 100px;
+    background-color: rgb(88, 88, 88);
+    border: 2px solid black;
+}

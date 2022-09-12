@@ -2,57 +2,139 @@
     margin: 0;
     padding: 0;
 }
-#container {
+body {
+    display: flex;
     height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: rgb(88, 88, 88);
 }
-#game {
+
+
+
+#scoreContainer {
+    background-color: rgb(32, 32, 32);
+    flex: 0 0 25%;
+    display: flex;
+    flex-direction: column;
+}
+.scoreContainers {
+    flex: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 5px;
-    background-color: rgb(63, 63, 63);
-    border: 5px solid black;
-    padding: 0 30px;
 }
-#gameRow1 {
+.scoreTitles {
+    position: relative;
+    top: 30%;
+    color: rgb(0, 125, 197);
+}
+.scoreCount {
+    position: relative;
+    top: 40%;
+    font-size: 500%;
+    color: rgb(0, 93, 146);
+}
+
+
+
+#gameContainer {
+    background-color: rgb(48, 48, 48);
+    flex: 0 0 50%;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    height: 50px;
-    width: 370px;
-    font-size: xx-large;
 }
-#gameRow2 {
-    gap: 25px;
+
+#winnerText {
+   position: relative;
+   top: 15%; 
+   font-size: 500%;
+   color: rgb(0, 125, 197);
+}
+
+#winnerResult {
+    position: relative;
+    top: 20%;
+    font-size: 335%;
+    color: rgb(0, 93, 146);
+}
+
+#rpsChoice {
     display: flex;
+    position: relative;
+    top: 35%;
+    width: 100%;
 }
+.rpsChoices {
+    flex: auto;
+}
+
+#rock {
+    padding: 10%;
+}
+#rock:hover {
+    padding: 5%;
+}
+
+#paper {
+    padding: 10%;
+}
+#paper:hover {
+    padding: 5%;
+}
+
+#scissors {
+    padding: 10%;
+}
+#scissors:hover {
+    padding: 5%;
+}
+
+
+
+#historyContainer {
+    background-color: rgb(32, 32, 32);
+    flex: 0 0 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10%;
+}
+#historyTitle {
+    color: rgb(0, 125, 197);
+}
+#historyContainer > div {
+    color: rgb(0, 93, 146);
+}
+
+
+
 #playAgain {
-    width: 350px;
-    height: 100px;
+    position: relative;
+    top: 50%;
+    font-size: 300%;
+    color: rgb(0, 125, 197);
     display: none;
-    justify-content: center;
-    align-items: center;
 }
-#gameRow3 {
-    height: 90px;
-    width: 350px;
-    display: flex;
+#playAgain:hover {
+    font-size: 320%;
 }
-#gameScoreColumn1, #gameScoreColumn2, #gameScoreColumn3 { 
-    width: 33.3%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size: xx-large;
-}
-.buttons {
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .choices {
     height: 100px;
     width: 100px;
-    background-color: rgb(88, 88, 88);
-    border: 2px solid black;
 }
+.choices:hover {
+    height: 120px;
+    width: 120px;
+} */
