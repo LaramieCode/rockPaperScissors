@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="newstyles.css">
+    <script src="game.js" defer></script>
     <title>Document</title>
 </head>
 <body>
@@ -12,24 +13,25 @@
     <div id="scoreContainer">
         <div id="playerScoreContainer" class="scoreContainers">
             <h1 class="scoreTitles">Player</h1>
-            <h2 class="scoreCount">#</h2>
+            <h2 class="scoreCount" id="playerScore">#</h2>
 
         </div>
         <div id="computerScoreContainer" class="scoreContainers">
             <h1 class="scoreTitles">Computer</h1>
-            <h2 class="scoreCount">#</h2>
+            <h2 class="scoreCount" id="computerScore">#</h2>
 
         </div>
     </div>
 
     <div id="gameContainer">
         <div id="winnerText">Round Winner!</div>
-        <div id="winnerResult">null</div>
+        <div id="winnerResult">Rock, Paper, Scissors?</div>
         <div id="rpsChoice">
             <div class="rpsChoices"><img class="rpsImage" id="rock" src="images/rock.svg"></div>
             <div class="rpsChoices"><img class="rpsImage" id="paper" src="images/paper.svg"></div>
             <div class="rpsChoices"><img class="rpsImage" id="scissors" src="images/scissors.svg"></div>
         </div>
+        <div id="playAgain">Play again?</div>
     </div>
 
     <div id="historyContainer">
